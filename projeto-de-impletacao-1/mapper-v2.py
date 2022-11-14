@@ -7,7 +7,7 @@ for line in sys.stdin:
     line = line.strip()
     words = line.split()
     for word in words:
-        if wordMap.get(word):
+        if wordMap.get(word) is not None:
             wordMap[word] += 1
         else:
             wordMap[word] = 0
