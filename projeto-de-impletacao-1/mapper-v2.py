@@ -10,7 +10,7 @@ for line in sys.stdin:
         if wordMap.get(word) is not None:
             wordMap[word] += 1
         else:
-            wordMap[word] = 0
+            wordMap[word] = 1
 
 for word, count in wordMap.items():
     print ('%s\t%s' % (word, count))
